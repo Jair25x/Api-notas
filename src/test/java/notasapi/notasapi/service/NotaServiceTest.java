@@ -22,7 +22,6 @@ import notasapi.notasapi.repository.NotaRepository;
 
 
 @ExtendWith(MockitoExtension.class) // Habilita Mockito en JUnit 5
-@ActiveProfiles("test") // Usa el perfil de pruebas (H2 en lugar de PostgreSQL)
 class NotaServiceTest {
 
     @Mock
