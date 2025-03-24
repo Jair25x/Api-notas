@@ -1,6 +1,7 @@
 package notasapi.notasapi.service;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 
 import java.util.Arrays;
@@ -13,6 +14,8 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
 
 import notasapi.notasapi.dto.NotaDTO;
 import notasapi.notasapi.entity.Nota;
@@ -20,6 +23,7 @@ import notasapi.notasapi.repository.NotaRepository;
 
 
 @ExtendWith(MockitoExtension.class) // Habilita Mockito en JUnit 5
+@ActiveProfiles("test") // Usa el perfil de pruebas (H2 en lugar de PostgreSQL)
 class NotaServiceTest {
 
     @Mock
