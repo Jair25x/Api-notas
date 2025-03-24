@@ -12,9 +12,6 @@ import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
 
-import notasapi.notasapi.exception.ErrorDetalles;
-import notasapi.notasapi.exception.RecursoNoEncontradoException;
-
 @ControllerAdvice
 public class GlobalExceptionHandler {
 
